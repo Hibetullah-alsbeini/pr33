@@ -188,6 +188,7 @@ import ownUtil.MeldungsfensterAnzeiger;
 		            @Override
 		            public void handle(ActionEvent e) {
 		        	   gc.nehmeGetraenkAuf();
+						gm.notifyObserver();
 		        	  
 		            }
 			    });
@@ -195,7 +196,7 @@ import ownUtil.MeldungsfensterAnzeiger;
 			    	@Override
 			        public void handle(ActionEvent e) {
 			            zeigeGetraenkAn();
-			     	  
+			     	  gm.notifyObserver();
 			        } 
 		   	    });
 			    mnItmCsvImport.setOnAction(new EventHandler<ActionEvent>() {
@@ -245,4 +246,5 @@ import ownUtil.MeldungsfensterAnzeiger;
 		    }
 
 		}
+
 
